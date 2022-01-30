@@ -1,0 +1,26 @@
+.card {
+  text-align: left;
+}
+
+input[type='radio'] {
+  width: 1em;
+  height: 1em;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+
+input[type='text'] {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #e1e1e1;
+  width: 40%;
+}
+
+.input_margin {
+  margin-bottom: 0.5rem;
+}
+
+.select {
+  border-color: #e1e1e1;
+}
