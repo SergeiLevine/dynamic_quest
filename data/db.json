@@ -10,11 +10,7 @@
           "question": "What language is your favorite?",
           "required": true,
           "inputType": "radio",
-          "data": [
-            "JavaScript",
-            "TypeScript",
-            "CoffeeScript"
-          ]
+          "data": ["JavaScript", "TypeScript", "CoffeeScript"]
         },
         {
           "id": 1,
@@ -22,9 +18,7 @@
           "question": "Why do you like TypeScript?",
           "required": true,
           "inputType": "text",
-          "data": [
-            "Your answer"
-          ],
+          "data": ["Your answer"],
           "conditional": {
             "conditional_name": "favourite_language",
             "data_choice": "TypeScript"
@@ -36,9 +30,7 @@
           "question": "What do you like about programming?",
           "required": false,
           "inputType": "text",
-          "data": [
-            "Your answer"
-          ]
+          "data": ["Your answer"]
         },
         {
           "id": 3,
@@ -46,11 +38,7 @@
           "question": "How was the assignment?",
           "required": true,
           "inputType": "radio",
-          "data": [
-            "Easy",
-            "Normal",
-            "Hard"
-          ],
+          "data": ["Easy", "Normal", "Hard"],
           "other": {
             "name": "other",
             "title": "Other:"
@@ -62,11 +50,7 @@
           "question": "What OS?",
           "required": true,
           "inputType": "select",
-          "data": [
-            "Windows",
-            "Mac",
-            "Linux"
-          ]
+          "data": ["Windows", "Mac", "Linux"]
         }
       ]
     },
@@ -80,10 +64,7 @@
           "question": "Are you stressed?",
           "required": true,
           "inputType": "radio",
-          "data": [
-            "Yes",
-            "No"
-          ]
+          "data": ["Yes", "No"]
         },
         {
           "id": 1,
@@ -91,9 +72,7 @@
           "question": "What annoys you the most?",
           "required": false,
           "inputType": "text",
-          "data": [
-            "Your answer"
-          ],
+          "data": ["Your answer"],
           "conditional": {
             "conditional_name": "stress_level",
             "data_choice": "Yes"
@@ -105,10 +84,7 @@
           "question": "Do you like challenges?",
           "required": true,
           "inputType": "radio",
-          "data": [
-            "Yes",
-            "No"
-          ],
+          "data": ["Yes", "No"],
           "other": {
             "name": "other",
             "title": "Other:"
@@ -126,32 +102,6 @@
       "assignment_difficulty": "Needed to refresh React memory",
       "work_os": "Mac",
       "id": 1
-    },
-    {
-      "company": "0",
-      "favourite_language": "TypeScript",
-      "why_like_typescrypt": "sds",
-      "like_programming": "sdsds",
-      "assignment_difficulty": "sdsd",
-      "work_os": "Windows",
-      "id": 2
-    },
-    {
-      "company": "0",
-      "favourite_language": "TypeScript",
-      "why_like_typescrypt": "aaa",
-      "like_programming": "aaaa",
-      "assignment_difficulty": "aaaa",
-      "work_os": "Windows",
-      "id": 3
-    },
-    {
-      "company": "0",
-      "assignment_difficulty": "",
-      "favourite_language": "JavaScript",
-      "like_programming": "b",
-      "work_os": "Windows",
-      "id": 4
     }
   ]
 }

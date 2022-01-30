@@ -1,4 +1,4 @@
-import InputTypes from './InputTypes';
-import { formConditional } from './help_fun';
+import InputTypes from './inputs/InputTypes';
+import { formConditional } from './functions/help_fun';
 
 export { InputTypes, formConditional };
