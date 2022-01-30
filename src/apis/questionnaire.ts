@@ -5,7 +5,7 @@ const requestOptions = {
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ title: 'React Hooks PUT Request Example' }),
 };
-
+// get specific questionnarie
 const fetchQuestionnarie = async (id: string | undefined) => {
   try {
     const response = await fetch(SERVER + `/questionnaries/${id}`);
@@ -22,7 +22,7 @@ const fetchQuestionnarie = async (id: string | undefined) => {
     return error;
   }
 };
-
+// get all questionnaries
 const fetchQuestionnaries = async () => {
   try {
     const response = await fetch(SERVER + `/questionnaries`);
@@ -39,7 +39,7 @@ const fetchQuestionnaries = async () => {
     return error;
   }
 };
-
+// post the answer to the db with company id so we could distinguish to what company the answers related
 const postAnswers = async (inputs: {}) => {
   try {
     const response = await fetch(SERVER + `/responders`, {

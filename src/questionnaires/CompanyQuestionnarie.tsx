@@ -28,12 +28,12 @@ const CompanyQuestionnarie = () => {
 
   const [data, setData] = useState(Object);
   const [inputs, setInputs] = useState({});
-  const [formInValid, setFormInValid] = useState(true);
 
   const ref = useRef(null);
 
   const questionnarie = useLocation().state as LocationState;
-
+  // if we comming from homepage we receiving the data from state
+  // but if the user has a link to the questionnarie we will make api call to fetch the data
   useEffect(() => {
     if (questionnarie) {
       setData(questionnarie);
@@ -47,7 +47,7 @@ const CompanyQuestionnarie = () => {
   function goBack() {
     navigate('/');
   }
-
+  // saving all the answers
   function handleChange(e: any) {
     setInputs((state) => ({
       ...state,
@@ -55,11 +55,11 @@ const CompanyQuestionnarie = () => {
       [e.target.name]: e.target.value,
     }));
   }
-
+  // on submit we adding errors for required fields that were not submitted
+  // and when the form is valid we are saving the data
   function handleSubmit(e: any) {
     e.preventDefault();
 
-    setFormInValid(true);
     const form_valid = Array.prototype.slice
       .call(ref.current)
       .filter((elem) => {
@@ -80,7 +80,7 @@ const CompanyQuestionnarie = () => {
       navigate('/');
     }
   }
-
+  // title
   function renderTitleCard() {
     return (
       <Card>
@@ -97,7 +97,7 @@ const CompanyQuestionnarie = () => {
       </Card>
     );
   }
-
+  // InputTypes component making the choice what input component will be displayed baset on api response
   function renderCards() {
     return data?.questions?.map((item: Questions, index: number) => {
       return (

@@ -5,7 +5,7 @@ type Props = {
   children: JSX.Element;
   hide?: boolean;
 };
-
+//we needed the option for conditional fields to be displayed only on specific selection
 const Card = ({ children, hide }: Props) => {
   return (
     <div

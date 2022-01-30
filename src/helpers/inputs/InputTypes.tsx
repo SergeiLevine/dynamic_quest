@@ -20,12 +20,8 @@ type Props = {
 };
 
 const InputTypes = ({ data, handleChange, inputs }: Props) => {
-  const [other, setOther] = useState('');
-  const [conditional, setConditional] = useState('');
-  const [items, setItems] = useState(data);
-
   const card: JSX.Element[] = [];
-
+  // rendering the needed component
   if (data.inputType == 'radio') {
     {
       return (

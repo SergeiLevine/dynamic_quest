@@ -10,17 +10,13 @@ import { useState } from 'react';
 import PuffLoader from 'react-spinners/PuffLoader';
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const [fade, setFade] = useState(false);
-
-  useEffect(() => {
-    // setTimeout(() => {
-    //   setLoading(!loading);
-    // }, 3000);
-  }, [loading]);
   return (
     <Router>
       <Routes>
+        {/* two routes,
+        First is HomePage to navigate to different questionnaries
+        Second is to display the questions
+          */}
         <Route path='/' element={<Home />} />
 
         <Route path='questionaries/:id' element={<CompanyQuestionnarie />} />

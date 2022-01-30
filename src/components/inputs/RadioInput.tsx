@@ -39,7 +39,7 @@ const RadioInput = ({ data, handleChange, inputs }: Props) => {
       />
     );
   }
-
+  // radio input with "Other" option
   function renderRadio() {
     const radio = [];
 
@@ -67,6 +67,7 @@ const RadioInput = ({ data, handleChange, inputs }: Props) => {
         );
       })
     );
+    //if we have an option for user input we will display it
     if (data.other) {
       radio.push(
         <div key={`radio_${data.other.name}`}>
@@ -85,6 +86,7 @@ const RadioInput = ({ data, handleChange, inputs }: Props) => {
             {data.other.title}
           </label>
           <input
+            // had to get a little bit tricky to make it work
             type='text'
             name={data.name}
             id={data.name}

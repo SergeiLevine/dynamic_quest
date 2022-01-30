@@ -15,6 +15,7 @@ const Home = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);
   const [selectVal, setSelectVal] = useState<number>(-1);
+  // we fetching all the questionnaries
   useEffect(() => {
     fetchQuestionnaries().then((res: any) => {
       setData(res);
@@ -59,6 +60,7 @@ const Home = () => {
           type='button'
           className='btn btn-info col'
           onClick={() =>
+            // passing the data relevant to the page
             navigate(`questionaries/${selectVal}`, {
               state: data[selectVal],
             })
