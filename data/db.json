@@ -1,0 +1,157 @@
+{
+  "questionnaries": [
+    {
+      "id": 0,
+      "title": "GoTech Questionnarie",
+      "questions": [
+        {
+          "id": 0,
+          "name": "favourite_language",
+          "question": "What language is your favorite?",
+          "required": true,
+          "inputType": "radio",
+          "data": [
+            "JavaScript",
+            "TypeScript",
+            "CoffeeScript"
+          ]
+        },
+        {
+          "id": 1,
+          "name": "why_like_typescrypt",
+          "question": "Why do you like TypeScript?",
+          "required": true,
+          "inputType": "text",
+          "data": [
+            "Your answer"
+          ],
+          "conditional": {
+            "conditional_name": "favourite_language",
+            "data_choice": "TypeScript"
+          }
+        },
+        {
+          "id": 2,
+          "name": "like_programming",
+          "question": "What do you like about programming?",
+          "required": false,
+          "inputType": "text",
+          "data": [
+            "Your answer"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "assignment_difficulty",
+          "question": "How was the assignment?",
+          "required": true,
+          "inputType": "radio",
+          "data": [
+            "Easy",
+            "Normal",
+            "Hard"
+          ],
+          "other": {
+            "name": "other",
+            "title": "Other:"
+          }
+        },
+        {
+          "id": 4,
+          "name": "work_os",
+          "question": "What OS?",
+          "required": true,
+          "inputType": "select",
+          "data": [
+            "Windows",
+            "Mac",
+            "Linux"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Feelings Company",
+      "questions": [
+        {
+          "id": 0,
+          "name": "stress_level",
+          "question": "Are you stressed?",
+          "required": true,
+          "inputType": "radio",
+          "data": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "id": 1,
+          "name": "what_annoys",
+          "question": "What annoys you the most?",
+          "required": false,
+          "inputType": "text",
+          "data": [
+            "Your answer"
+          ],
+          "conditional": {
+            "conditional_name": "stress_level",
+            "data_choice": "Yes"
+          }
+        },
+        {
+          "id": 2,
+          "name": "like_challenges",
+          "question": "Do you like challenges?",
+          "required": true,
+          "inputType": "radio",
+          "data": [
+            "Yes",
+            "No"
+          ],
+          "other": {
+            "name": "other",
+            "title": "Other:"
+          }
+        }
+      ]
+    }
+  ],
+  "responders": [
+    {
+      "company": "0",
+      "favourite_language": "TypeScript",
+      "like_programming": "Challenges",
+      "why_like_typescrypt": "Order",
+      "assignment_difficulty": "Needed to refresh React memory",
+      "work_os": "Mac",
+      "id": 1
+    },
+    {
+      "company": "0",
+      "favourite_language": "TypeScript",
+      "why_like_typescrypt": "sds",
+      "like_programming": "sdsds",
+      "assignment_difficulty": "sdsd",
+      "work_os": "Windows",
+      "id": 2
+    },
+    {
+      "company": "0",
+      "favourite_language": "TypeScript",
+      "why_like_typescrypt": "aaa",
+      "like_programming": "aaaa",
+      "assignment_difficulty": "aaaa",
+      "work_os": "Windows",
+      "id": 3
+    },
+    {
+      "company": "0",
+      "assignment_difficulty": "",
+      "favourite_language": "JavaScript",
+      "like_programming": "b",
+      "work_os": "Windows",
+      "id": 4
+    }
+  ]
+}
